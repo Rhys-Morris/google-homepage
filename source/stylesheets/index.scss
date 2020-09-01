@@ -1,0 +1,149 @@
+// Global reset
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Arial", sans-serif;
+    font-size: 62.5%; // Set root font size to 10px
+    color: #555;
+}
+
+.body {
+    height: 100vh;
+}
+
+.header {
+    padding: 2rem 2rem;
+    font-size: 1.6rem;
+    height: 20vh;
+
+
+    &_nav-bar {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+            display: flex;
+        }
+
+        &_right {
+            display: flex;
+        }
+
+        &_item:not(:first-child) {
+            padding-left: 2rem;
+        }
+
+        &_link {
+            text-decoration: none;
+            color: inherit;
+            transition: all .2s;
+        }
+
+        &_link:hover,
+        &_link:active {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.main {
+    text-align: center;
+    height: 67.5vh;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.search {
+    &_label {
+        display: none;
+    }
+
+    &_input {
+        font-size: 1.6rem;
+        width: 60rem;
+        padding: 1.5rem 2.5rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+        outline: none;
+        margin-bottom: 2.5rem;
+        transition: all .2s;
+    }
+
+    &_input:hover, {
+        box-shadow: 0 .2rem .5rem .2rem rgba(#000, .1);
+    }
+}
+
+.button {
+    font-size: 1.6rem;
+    color: #5F6368;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    transition: all .2s;
+}
+
+.button:last-child {
+    margin-left: .8rem;
+}
+
+.button:hover,
+.button:active {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 .2rem .2rem rgba(#000, .15);
+}
+
+.footer {
+    color: rgba(0,0,0, .54);
+    background-color: #f2f2f2;
+    font-size: 1.8rem;
+    height: 12.5vh;
+
+    &_location {
+        padding: 2rem 2rem;
+        border-top: 1px solid #ddd;
+    }
+
+    &_nav-bar {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8rem 2rem;
+        border-top: 1px solid #ddd;
+
+        &_left {
+            display: flex;
+        }
+
+        &_right {
+            display: flex;
+        }
+
+        &_item:not(:first-child) {
+            padding-left: 3rem;
+        }
+
+        &_link {
+            text-decoration: none;
+            color: inherit;
+            transition: all .2s;
+        }
+
+        &_link:hover,
+        &_link:active {
+            text-decoration: underline;
+        }
+    }
+}
